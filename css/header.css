@@ -1,0 +1,84 @@
+body > header nav {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+body > header nav ul {
+    background-color: #ffffff;
+    border-bottom: 0.2em solid #00d66c;
+    height: 3em;
+
+    position: relative;
+}
+
+body > header nav li {
+    position: absolute;
+    display: block;
+    top: 0.5rem;
+}
+
+body > header nav li :hover {
+    opacity: 90%;
+}
+
+body > header nav li:nth-child(1) {
+    left: 1rem;
+}
+
+body > header nav li:nth-child(2) {
+    right: calc(2.5rem + 0.8rem);
+    font-size: 0.7em;
+    margin-top: 0.3em;
+}
+
+
+body > header nav li:nth-child(3) {
+    right: 1rem;
+    font-size: 0.7em;
+    margin-top: 0.3em;
+}
+
+body > header nav img {
+    height: 2em;
+}
+
+#logo-transavia img {
+    height: 2em;
+    display: none;
+    visibility: hidden;
+}
+
+@media (max-width: 30em) {
+    #logo-transavia img:nth-child(1) {
+        display: initial;
+        visibility: visible;
+    }
+}
+
+@media (min-width: 30em) and (max-width: 60em) {
+    #logo-transavia img:nth-child(2) {
+        display: initial;
+        visibility: visible;
+    }
+}
+
+@media (min-width: 60em) {
+    #logo-transavia img:nth-child(3) {
+        display: initial;
+        visibility: visible;
+    }
+}
+
+
+body > header nav li {
+    /*  margin: 0 1em;*/
+    list-style-type: none;
+}
+
+main {
+    margin-top: 4em;
+}

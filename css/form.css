@@ -1,0 +1,171 @@
+legend {
+    margin-bottom: 3rem;
+}
+
+label {
+    margin-bottom: 0.3rem;
+    display: block;
+}
+
+label:not(:first-of-type) {
+    margin-top: 2em;
+}
+
+input {
+    display: inline-block;
+    box-sizing: border-box;
+    border: .0625rem solid #91a3b7;
+    color: #606060;
+    font-size: 1rem;
+    border-radius: .5rem;
+    font-family: "Nexa Regular";
+    padding-bottom: .5em;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 2em;
+    width: 100%;
+}
+
+button {
+   display: inline-block;
+    margin-top: 1rem;
+    font-family: "Nexa XBold";
+    padding: 1rem 1.25rem 1rem 1.25rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #ff3268;
+    box-shadow: inset 0 -0.1875em 0.0625em #b12449;
+    border-radius: 3rem;
+    width: max-content;
+}
+
+button:hover {
+    background: #ff608a;
+    transition-duration: 0.1s;
+}
+
+button:active{
+    background: #ff3268;
+    box-shadow: inset 0em 0.0625em 0em 0em #b12449;
+}
+
+
+article {
+    display: block;
+    background: white;
+    border-radius: 0.5rem;
+}
+
+main > article > fieldset > form > a {
+    display: inline-block;
+    margin-right: 60%;
+    text-decoration: underline;
+    background: none;
+    font-family: "Nexa Regular";
+    font-size: .8em;
+    padding-top: 1.5em;;
+    border: 0;
+    cursor: pointer;
+    color: #2800a0;
+    text-align: left;
+}
+
+a.aanmelden {
+    display: inline-block;
+    width: 10em;
+    padding-top: 3em;
+    text-decoration: underline;
+    font-family: "Nexa Regular";
+}
+
+/* Media query flexbox */
+
+#media-query {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    color: red;
+    pointer-events: none;
+    font-size: 2em;
+}
+
+@media (min-width: 30em) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        height: 10rem;
+        max-width: 40rem;
+        
+    }
+}
+
+@media (max-width: 30em) {
+    main > article {
+        height: 30em;
+        width: 30rem;
+        margin: 2em;
+        padding: 1.5em;
+    }
+}
+
+
+@media (min-width: 30em) and (max-width: 60em) {
+    main > article {
+        height: 30rem;
+        width: 10vmin;
+
+        margin: 2em;
+        padding: 1.5em;
+        flex-grow: 3;
+    }
+}
+
+@media (min-width: 60em) {
+    main > article {
+        height: 30rem;
+        width: 10vmin;
+
+        margin: 2em;
+        padding: 1.5em;
+        flex-grow: 3;
+    }
+}
+
+
+input:not([type="submit"]) {
+    margin-bottom: 1em;
+}
+
+
+input:not([type="submit"]).used:valid {
+    border-color: #00d66c;
+}
+
+input:not([type="submit"]).used:not(:valid) {
+    border-color: #ff3268;
+}
+
+fieldset p {
+    display: none;
+    visibility: hidden;
+}
+
+input:not([type="submit"]).used:not(:valid) + p {
+    display: initial;
+    visibility: visible;
+}
+
+
+
+p.error-message {
+    color: red;
+}
+
+/*
+    :not() -- NIET wat er binnen zit. Het tegenovergestelde.
+    :not([type="submit"]) -- geen submit knop check
+    .used -- gebruikt, zie javascript
+    :valid --Geldig ingevuld.
+    :first-of-type -- pakt de eerst element van het type
+*/
