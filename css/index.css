@@ -14,11 +14,7 @@ h2 {
 }
 
 
-/* Eigen CSS */
-
-
-
-
+/* CSS Articles  */
 
 article {
     position: relative;
@@ -86,9 +82,25 @@ main > article > a {
 main > article {
     background-position: center;
     background-size: cover;
-    border-radius: 0.5rem;
-    
+    border-radius: 0.5rem;   
 }
+
+main > article .top:hover{
+    animation: bounce 1s;
+}
+
+main > article .top:active{
+    background: url("../assets/icons/Icon-heart_fill_pink.svg") no-repeat;
+}
+
+
+main > article:hover {
+    box-shadow: 0 0.5em 1em 0 rgba(0,0,0,0.2), 0 0.5em 1.5em 0 rgba(0,0,0,0.19);
+    transform: scale(1.02);
+    transition: 0.4s ease-out;
+}
+
+
 main > article:nth-child(1) {
     background-image: url(../assets/img/procesverbaal.card.png);
    
@@ -115,8 +127,10 @@ main > article footer {
     left: 1em;
     bottom: 1em;
     pointer-events: none;
+    
     /* cursor uitzetten */
 }
+
 
 main > article button.top {
     top: 0;
@@ -128,12 +142,41 @@ main > article button.bottom {
 
 main > article button img {
     width: 2rem;
-    transition: width 250ms ease;
 }
 
 main > article img:hover {
-    width: 2.2rem;
+    width: 2.5rem;
+    transition: width 250ms ease;
 }
+
+main > article .bottom:hover{
+    transform: translateX(0.0rem) rotate(-10deg);
+    transition: 0.8s;
+}
+
+
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-0.25em);
+		transform: translateY(-0.25em);
+	}
+
+	80% {
+		-webkit-transform: translateY(-0.5em);
+		transform: translateY(-0.5em);
+	}
+}
+
+main > article .top:hover{
+    animation: bounce 1s;
+}
+
 
 
 
@@ -151,6 +194,10 @@ main > article .bottom {
 .liked{
     background-color:black !important
 }
+
+
+/* CSS Beoordeling pop-up  */
+
 #beoordeling {
     position: fixed;
     z-index: 100;
@@ -182,6 +229,16 @@ main > article .bottom {
     width: 3rem;
 }
 
+#beoordeling article > button:hover {
+    transform: translateX(-0.2rem) rotate(90deg);
+    height: 2.78rem;
+    width: 2.96rem;
+    opacity: 50%;
+    transition-duration: 0.2s;
+}
+
+
+
 #beoordeling h2 {
     margin-top: 1rem;
 }
@@ -198,6 +255,25 @@ main > article .bottom {
     width: 2.5rem;
 }
 
+#beoordeling footer button:hover{
+    background: url("../assets/icons/Icon-rating-selected.svg") no-repeat;
+    transform: translateX(0.0rem) rotate(72deg);
+    transition-duration: 0.2s;
+}
+
 #beoordeling footer button.selected {
     background: rgba(0, 0, 0, 0) url("../assets/icons/Icon-rating-selected.svg") no-repeat;
+    transition-duration: 0.5s;
+}
+
+
+footer h5 {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #606060;
+    text-align: center;
+    padding-top: 1.3em;
+    padding-bottom: 1em;
 }

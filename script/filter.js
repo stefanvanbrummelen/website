@@ -53,6 +53,9 @@ const books = [
     },
 ]
 
+
+/* Mogelijk het dynamisch maken m.b.v. innerHTML in Javascript
+
 document.addEventListener("DOMContentLoaded",()=>{
     const main = document.querySelector("main")
     books.forEach(book => {
@@ -86,3 +89,5 @@ document.addEventListener("DOMContentLoaded",()=>{
     })
 
 })
+
+*/

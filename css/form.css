@@ -40,8 +40,8 @@ button {
 }
 
 button:hover {
-    background: #ff608a;
-    transition-duration: 0.1s;
+    background: #ff7196;
+    transition-duration: 0.15s;
 }
 
 button:active{
@@ -133,6 +133,14 @@ a.aanmelden {
 }
 
 
+
+/* Formulier validatie states */
+
+input:hover {
+    border-bottom-color: #2800a0;
+    transition-duration: 0.2s;
+}
+
 input:not([type="submit"]) {
     margin-bottom: 1em;
 }
@@ -146,20 +154,18 @@ input:not([type="submit"]).used:not(:valid) {
     border-color: #ff3268;
 }
 
-fieldset p {
+fieldset h6 {
     display: none;
     visibility: hidden;
 }
 
-input:not([type="submit"]).used:not(:valid) + p {
+input:not([type="submit"]).used:not(:valid) + h6 {
     display: initial;
     visibility: visible;
 }
 
-
-
-p.error-message {
-    color: red;
+h6.error-message {
+    color: #ff3268;
 }
 
 /*

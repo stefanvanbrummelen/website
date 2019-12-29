@@ -1,3 +1,7 @@
+html {
+        background-color: black;
+    }
+
 article > button {
 
     position: absolute;
@@ -35,7 +39,7 @@ article > button.downloading {
 
 @media all and (min-width: 30em) and (max-width: 40em) {
     #verhaal {
-        background-image: url('../assets/png/Proces-verbaal_mobile.png');
+        background-image: url('../assets/png/Proces-verbaal_mobile.gif');
        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -45,7 +49,7 @@ article > button.downloading {
 }
 
 
-@media all and (min-width: 40em) and (max-width: 60em) {
+@media all and (min-width: 40em) and (max-width: 80em) {
     #verhaal {
         background-image: url('../assets/png/Proces-verbaal_tablet.png');
        background-position: center;
@@ -57,7 +61,7 @@ article > button.downloading {
 }
 
 
-@media all and (min-width: 60em) {
+@media all and (min-width: 80em) {
     #verhaal {
         background-image: url('../assets/png/Proces-verbaal_desktop.png');
        background-position: center;

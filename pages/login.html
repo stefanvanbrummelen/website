@@ -36,7 +36,7 @@
 
         </nav>
     </header>
-
+        
     <main>
         <article>
             <fieldset>
@@ -44,9 +44,11 @@
                 <h1><legend>Inloggen</legend></h1>
                 <label for="email"><h4>E-mailadres</h4></label>
                 <input type="email" placeholder="gebruiker@domein.nl" id="email" name="email" required>
+                <h6 class="error-message">Dit is een onbekend emailadres.</h6>
 
-                <label for="password"><h4>Wachtwoord</h4></label>
+                <label for="password"><h6>Wachtwoord</h6></label>
                 <input type="password" placeholder="*******" id="password" name="password" required>
+                <h6 class="error-message">Uw wachtwoord is incorrect.</h6>
                 
                 <a href="" class="vergeten">Wachtwoord vergeten?</a>
 
@@ -60,6 +62,9 @@
         </article>
     </main>
 
+    <script src="../script/form.js"></script>
 </body>
 
 </html>
+
+

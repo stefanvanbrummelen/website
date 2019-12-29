@@ -5,8 +5,8 @@ console.log(formElement);
 formElement.addEventListener("focusin", function (e) {
     var element = e.target;
     if (element.tagName === "INPUT") {
-        setTimeout(function () { // na 1000 ms set feedback aan.
+        setTimeout(function () { // na 4000 ms set feedback aan.
             element.classList.add("used");
-        }, 1000);
+        }, 4000);
     }
 });
