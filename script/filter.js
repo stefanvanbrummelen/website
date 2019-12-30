@@ -7,7 +7,7 @@ const books = [
         leestijd: 20,
         genre: "drama",
         background:"../assets/img/procesverbaal.card.png",
-        link: "procesverbaal.html" 
+        link: "pages/procesverbaal.html" 
     },
     {
         id:1,
@@ -15,7 +15,7 @@ const books = [
         leestijd: 20,
         genre: "horror",
         background:"../assets/img/procesverbaal.card.png",
-        link: "alliteratie.html"
+        link: "pages/procesverbaal.html"
     },
     {
         id:2,
@@ -23,7 +23,7 @@ const books = [
         leestijd: 20,
         genre: "amusement",
         background:"../assets/img/procesverbaal.card.png",
-        link: "julesdeelder.html"
+        link: "pages/procesverbaal.html"
     },
 ]
 
