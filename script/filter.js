@@ -1,35 +1,9 @@
-var storie1 = ["horor", "duitsland", 20];
-var storie2 = ["ali", "duitsland", 12];
-var storie3 = ["djfgjh", "nederland", 15];
-
-var stories = [storie1, storie2, storie3];
-
-landFilter = "";
-tijd = "";
-thema = "";
-
-
-var filterdStories = [];
-for (var i = 0; i < stories.length; i++) {
-    storie = stories[i]
-    if(storie[0] == thema || thema == ""){
-        if(storie[1] == landFilter || landFilter == ""){
-            if(storie[2] == tijd || tijd == ""){
-                filterdStories.push(storie)
-            }
-        }
-    }
-}
-
-
-
-
-/* toegevoegd op 13 dec 2019 */
+/* Mogelijk het dynamisch maken m.b.v. innerHTML in Javascript. toegevoegd op 13 dec 2019 */
 
 const books = [
     {
         id:0,
-        name: "Proces verbaal",
+        name: "Verdwaald",
         leestijd: 20,
         genre: "drama",
         background:"../assets/img/procesverbaal.card.png",
@@ -37,7 +11,7 @@ const books = [
     },
     {
         id:1,
-        name: "Alliteratie",
+        name: "Pijnlijk",
         leestijd: 20,
         genre: "horror",
         background:"../assets/img/procesverbaal.card.png",
@@ -45,7 +19,7 @@ const books = [
     },
     {
         id:2,
-        name: "Jules Deelder",
+        name: "Onbekende omgeving",
         leestijd: 20,
         genre: "amusement",
         background:"../assets/img/procesverbaal.card.png",
@@ -54,7 +28,10 @@ const books = [
 ]
 
 
-/* Mogelijk het dynamisch maken m.b.v. innerHTML in Javascript
+
+
+
+/* Mogelijk het dynamisch maken m.b.v. innerHTML in Javascript */
 
 document.addEventListener("DOMContentLoaded",()=>{
     const main = document.querySelector("main")
@@ -69,7 +46,7 @@ document.addEventListener("DOMContentLoaded",()=>{
             <a href=${book.link}></a>
             <h3>${book.name}</h3>
 
-            <button type="button" class="top ${liked ? "liked" : ""}"><img src=${liked ? "../assets/icons/Icon-heart_fill.svg":"../assets/icons/Icon-heart.svg"} alt="Hartjes icoon"></button>
+            <button type="button" class="top ${liked ? "liked" : ""}"><img src=${liked ? "../assets/icons/Icon-heart.svg":"../assets/icons/Icon-heart.svg"} alt="Hartjes icoon"></button>
             <button type="button" class="bottom beoordeling" id="alliteratie"><img src="../assets/icons/Icon-like.svg" alt="Hartjes icoon"></button> 
             <footer>
                 <p>Leestijd - ${book.leestijd}</p>
@@ -89,5 +66,3 @@ document.addEventListener("DOMContentLoaded",()=>{
     })
 
 })
-
-*/

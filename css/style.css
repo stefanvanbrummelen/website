@@ -68,7 +68,7 @@ a:hover {
 }
 
 .toggle-slider {
-    max-width: 60em;
+    max-width: 30em;
     position: relative;
     margin: 2em;
     margin-bottom: 6em;
@@ -80,6 +80,8 @@ a:hover {
     width: 49.5%;
     display: inline-block;
     margin: 0;
+    font-family: "Nexa Regular";
+    font-size: 1.2em;
 }
 
 .toggle-slider span {
@@ -88,7 +90,7 @@ a:hover {
     background-color: #2800a0;
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: 1;
     left: 0;
     font-weight: 1.0em;
     transition: left 0.6s ease;
@@ -101,7 +103,7 @@ a:hover {
 
 .toggle-slider.switched button:nth-child(2) {
     font-size: 1.5em;
-    font-family: "Nexa XBold"; 
+    font-family: "Nexa XBold";
 }
 
 .toggle-slider.switched span {

@@ -191,9 +191,15 @@ main > article .top {
 main > article .bottom {
     bottom: 0;
 }
+
+
+/* CSS class vanuit innerHTML filter.js
+
 .liked{
-    background-color:black !important
+    background: url("../assets/icons/Icon-heart_fill_pink.svg") no-repeat;
 }
+
+*/
 
 
 /* CSS Beoordeling pop-up  */

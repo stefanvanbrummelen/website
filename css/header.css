@@ -11,7 +11,6 @@ body > header nav ul {
     background-color: #ffffff;
     border-bottom: 0.2em solid #00d66c;
     height: 3em;
-
     position: relative;
 }
 
@@ -22,19 +21,12 @@ body > header nav li {
 }
 
 body > header nav li:hover {
-    opacity: 90%;
-    transform: scale(1.1);
+    opacity: 70%;
     transition: 0.4s ease;
 }
 
 body > header nav li:nth-child(1) {
     left: 1rem;
-}
-
-body > header nav li:nth-child(1):hover {
-    opacity: 90%;
-    transform: scale(1.05);
-    transition: 0.4s ease;
 }
 
 body > header nav li:nth-child(2) {
