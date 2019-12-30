@@ -27,7 +27,7 @@ input {
 }
 
 button {
-   display: inline-block;
+    display: inline-block;
     margin-top: 1rem;
     font-family: "Nexa XBold";
     padding: 1rem 1.25rem 1rem 1.25rem;
@@ -44,7 +44,7 @@ button:hover {
     transition-duration: 0.15s;
 }
 
-button:active{
+button:active {
     background: #ff3268;
     box-shadow: inset 0em 0.0625em 0em 0em #b12449;
 }
@@ -63,7 +63,8 @@ main > article > fieldset > form > a {
     background: none;
     font-family: "Nexa Regular";
     font-size: .8em;
-    padding-top: 1.5em;;
+    padding-top: 1.5em;
+    ;
     border: 0;
     cursor: pointer;
     color: #2800a0;
@@ -96,7 +97,7 @@ a.aanmelden {
         flex-wrap: wrap;
         height: 10rem;
         max-width: 40rem;
-        
+
     }
 }
 

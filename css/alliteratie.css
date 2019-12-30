@@ -1,6 +1,6 @@
 html {
-        background-color: black;
-    }
+    background-color: black;
+}
 
 article > button {
 
@@ -25,12 +25,12 @@ article > button.downloading {
 
     background-size: 2.0em;
     background-position: right 20%;
-    
+
 }
 
 
 #verhaal {
-    background-image:url('../assets/png/Alliteratie_mobile.png');
+    background-image: url('../assets/png/Alliteratie_mobile.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,11 +40,11 @@ article > button.downloading {
 @media all and (min-width: 30em) and (max-width: 40em) {
     #verhaal {
         background-image: url('../assets/png/Alliteratie_mobile.png');
-       background-position: center;
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         height: 250vw;
-        
+
     }
 }
 
@@ -52,11 +52,11 @@ article > button.downloading {
 @media all and (min-width: 40em) and (max-width: 80em) {
     #verhaal {
         background-image: url('../assets/png/Alliteratie_tablet.png');
-       background-position: center;
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         height: 160vw;
-        
+
     }
 }
 
@@ -64,11 +64,11 @@ article > button.downloading {
 @media all and (min-width: 80em) {
     #verhaal {
         background-image: url('../assets/png/Alliteratie_desktop.png');
-       background-position: center;
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         height: 70vw;
-        
+
     }
 }
 

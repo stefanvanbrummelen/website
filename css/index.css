@@ -82,20 +82,20 @@ main > article > a {
 main > article {
     background-position: center;
     background-size: cover;
-    border-radius: 0.5rem;   
+    border-radius: 0.5rem;
 }
 
-main > article .top:hover{
+main > article .top:hover {
     animation: bounce 1s;
 }
 
-main > article .top:active{
+main > article .top:active {
     background: url("../assets/icons/Icon-heart_fill_pink.svg") no-repeat;
 }
 
 
 main > article:hover {
-    box-shadow: 0 0.5em 1em 0 rgba(0,0,0,0.2), 0 0.5em 1.5em 0 rgba(0,0,0,0.19);
+    box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2), 0 0.5em 1.5em 0 rgba(0, 0, 0, 0.19);
     transform: scale(1.02);
     transition: 0.4s ease-out;
 }
@@ -103,13 +103,13 @@ main > article:hover {
 
 main > article:nth-child(1) {
     background-image: url(../assets/img/procesverbaal.card.png);
-   
-    
+
+
 }
 
 main > article:nth-child(2) {
     background-image: url(../assets/img/alliteratie.card);
-    
+
 }
 
 main > article:nth-child(3) {
@@ -127,7 +127,7 @@ main > article footer {
     left: 1em;
     bottom: 1em;
     pointer-events: none;
-    
+
     /* cursor uitzetten */
 }
 
@@ -149,7 +149,7 @@ main > article img:hover {
     transition: width 250ms ease;
 }
 
-main > article .bottom:hover{
+main > article .bottom:hover {
     transform: translateX(0.0rem) rotate(-10deg);
     transition: 0.8s;
 }
@@ -157,23 +157,27 @@ main > article .bottom:hover{
 
 
 @keyframes bounce {
-	0%, 20%, 60%, 100% {
-		-webkit-transform: translateY(0);
-		transform: translateY(0);
-	}
 
-	40% {
-		-webkit-transform: translateY(-0.25em);
-		transform: translateY(-0.25em);
-	}
+    0%,
+    20%,
+    60%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
 
-	80% {
-		-webkit-transform: translateY(-0.5em);
-		transform: translateY(-0.5em);
-	}
+    40% {
+        -webkit-transform: translateY(-0.25em);
+        transform: translateY(-0.25em);
+    }
+
+    80% {
+        -webkit-transform: translateY(-0.5em);
+        transform: translateY(-0.5em);
+    }
 }
 
-main > article .top:hover{
+main > article .top:hover {
     animation: bounce 1s;
 }
 
@@ -261,7 +265,7 @@ main > article .bottom {
     width: 2.5rem;
 }
 
-#beoordeling footer button:hover{
+#beoordeling footer button:hover {
     background: url("../assets/icons/Icon-rating-selected.svg") no-repeat;
     transform: translateX(0.0rem) rotate(72deg);
     transition-duration: 0.2s;

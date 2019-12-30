@@ -3,9 +3,10 @@ var ratingButtons = document.querySelectorAll(".beoordeling")
 console.log(ratingButtons)
 ratingButtons.forEach(button => {
     console.log(button)
-    button.addEventListener("click",()=>{
-    overlay.classList.remove("hidden")
-})})
+    button.addEventListener("click", () => {
+        overlay.classList.remove("hidden")
+    })
+})
 var rating_buttons = document.querySelectorAll("#beoordeling footer button");
 
 var overlay = document.getElementById("beoordeling");
