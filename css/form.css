@@ -49,6 +49,14 @@ button:active {
     box-shadow: inset 0em 0.0625em 0em 0em #b12449;
 }
 
+button:focus:not(.focus-visible) {
+  outline: none;
+}
+
+button:focus {
+    border-color: #2800a0;
+    transition-duration: 0.2s;
+}
 
 article {
     display: block;
@@ -142,6 +150,16 @@ input:hover {
     transition-duration: 0.2s;
 }
 
+input:focus {
+    border-color: #2800a0;
+    transition-duration: 0.2s;
+}
+
+input:focus:not(.focus-visible) {
+  outline: none;
+}
+
+
 input:not([type="submit"]) {
     margin-bottom: 1em;
 }
@@ -168,6 +186,13 @@ input:not([type="submit"]).used:not(:valid) + h6 {
 h6.error-message {
     color: #ff3268;
 }
+
+label {
+    font-family: "Nexa regular";
+    font-size: 1em;
+}
+
+
 
 /*
     :not() -- NIET wat er binnen zit. Het tegenovergestelde.
