@@ -52,22 +52,22 @@ body > header nav img {
     visibility: hidden;
 }
 
-@media (max-width: 30em) {
+@media (max-width: 40em) {
+    #logo-transavia img:nth-child(3) {
+        display: initial;
+        visibility: visible;
+    }
+}
+
+@media (min-width: 40em) and (max-width: 80em) {
     #logo-transavia img:nth-child(1) {
         display: initial;
         visibility: visible;
     }
 }
 
-@media (min-width: 30em) and (max-width: 60em) {
+@media (min-width: 80em) {
     #logo-transavia img:nth-child(2) {
-        display: initial;
-        visibility: visible;
-    }
-}
-
-@media (min-width: 60em) {
-    #logo-transavia img:nth-child(3) {
         display: initial;
         visibility: visible;
     }
@@ -77,8 +77,4 @@ body > header nav img {
 body > header nav li {
     /*  margin: 0 1em;*/
     list-style-type: none;
-}
-
-main {
-    margin-top: 4em;
 }

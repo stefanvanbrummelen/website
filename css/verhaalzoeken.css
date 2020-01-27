@@ -1,0 +1,616 @@
+legend {
+    margin-bottom: 3rem;
+}
+
+label {
+    margin-bottom: 0.3rem;
+    display: block;
+}
+
+label:not(:first-of-type) {
+    margin-top: 2em;
+}
+
+fieldset {
+    margin-top: 6em;
+}
+
+html { 
+  background: url(../assets/img/transavia_header-sale_2020.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-position: top;    
+}
+
+main {
+    background-color: #F3E5D8;
+    
+}
+
+
+input {
+    display: inline-block;
+    box-sizing: border-box;
+    border: .0625rem solid #91a3b7;
+    color: #606060;
+    font-size: 1rem;
+    border-radius: .5rem;
+    font-family: "Nexa Regular";
+    padding-bottom: .5em;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 2em;
+    width: 100%;
+}
+
+form > button {
+    display: inline-block;
+    margin-top: 1rem;
+    font-family: "Nexa XBold";
+    padding: 1rem 1.25rem 1rem 1.25rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #ff3268;
+    box-shadow: inset 0 -0.1875em 0.0625em #b12449;
+    border-radius: 3rem;
+    width: max-content;
+}
+
+form > .slider {
+    background: #f3e5d8;
+    cursor: pointer;
+   padding: 0em;
+    width: 75%;
+}
+
+form > label {
+    margin-bottom: 0.5em;
+}
+
+form > p {
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-size: 0.8em;
+        font-family: "Nexa regular";
+    font-size: .8em;
+    color: #606060;
+}
+
+form > button:hover {
+    background: #ff7196;
+    transition-duration: 0.15s;
+}
+
+form > button:active {
+    background: #ff3268;
+    box-shadow: inset 0em 0.0625em 0em 0em #b12449;
+}
+
+form > button:focus:not(.focus-visible) {
+  outline: none;
+}
+
+form > button:focus {
+    border-color: #2800a0;
+    transition-duration: 0.2s;
+}
+
+/* CSS Articles  */
+
+header > article {
+    position: relative;
+}
+
+
+#media-query {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    color: red;
+    pointer-events: none;
+    font-size: 2em;
+}
+
+header > article {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+form > h1 {
+    padding-top: 1.0em;
+    color: #00d66c;
+}
+
+@media (min-width: 40em) {
+    header > article {
+        display: inline-block;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 40em) {
+    header > article {
+        height: 43rem;
+        margin: 2em;
+    }
+}
+
+
+@media (min-width: 40em) and (max-width: 80em) {
+    header > article {
+        height: 43rem;
+        width: 100v;
+
+        margin: 2em;
+        flex-grow: 1;
+    }
+}
+
+@media (min-width: 80em) and (max-width: 100em) {
+    header > article {
+        height: 39rem;
+        width: 50vmin;
+
+        margin: 2em;
+        flex-grow: 1;
+    }
+}
+
+@media (min-width: 100em) {
+    header > article {
+        height: 39rem;
+        width: 28vw;
+
+        margin: 2em;
+        flex-grow: 1;
+    }
+}
+
+header > article > a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+header > article {
+    background-position: center;
+    background-size: cover;
+    border-radius: 0.5rem;
+}
+
+
+
+header > article {
+    display: block;
+    background: white;
+    border-radius: 0.5rem;
+}
+
+main > article > fieldset > form > a {
+    display: inline-block;
+    margin-right: 60%;
+    text-decoration: underline;
+    background: none;
+    font-family: "Nexa Regular";
+    font-size: .8em;
+    padding-top: 1.5em;
+    border: 0;
+    cursor: pointer;
+    color: #2800a0;
+    text-align: left;
+}
+
+a.aanmelden {
+    display: inline-block;
+    width: 10em;
+    padding-top: 3em;
+    text-decoration: underline;
+    font-family: "Nexa Regular";
+}
+
+form > h5  {
+    margin-top: 1em;
+}
+
+form > button {
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+
+form > select {
+    display: inline-block;
+    box-sizing: border-box;
+    border: .0625rem solid #91a3b7;
+    color: #606060;
+    font-size: 1rem;
+    font-family: "Nexa Regular";
+    width: 75%;
+    height: 2.5em;
+}
+
+
+/* Leestijd slider */
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 0em;
+  background: white;
+  outline: none;
+  opacity: 1.0;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 0.9;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.75em;;
+  height: 1.75em;;
+  background: #ff3268;
+border-radius: 2em;
+  cursor: pointer;
+}
+
+
+
+/* Formulier validatie states */
+
+input:hover {
+    border-bottom-color: #2800a0;
+    transition-duration: 0.2s;
+}
+
+input:focus {
+    border-color: #2800a0;
+    transition-duration: 0.2s;
+}
+
+input:focus:not(.focus-visible) {
+  outline: none;
+}
+
+
+input:not([type="submit"]) {
+    margin-bottom: 1em;
+}
+
+
+input:not([type="submit"]).used:valid {
+    border-color: #00d66c;
+}
+
+input:not([type="submit"]).used:not(:valid) {
+    border-color: #ff3268;
+}
+
+fieldset h6 {
+    display: none;
+    visibility: hidden;
+}
+
+input:not([type="submit"]).used:not(:valid) + h6 {
+    display: initial;
+    visibility: visible;
+}
+
+h6.error-message {
+    color: #ff3268;
+}
+
+label {
+    font-family: "Nexa regular";
+    font-size: 1em;
+}
+
+
+
+/*
+    :not() -- NIET wat er binnen zit. Het tegenovergestelde.
+    :not([type="submit"]) -- geen submit knop check
+    .used -- gebruikt, zie javascript
+    :valid --Geldig ingevuld.
+    :first-of-type -- pakt de eerst element van het type
+*/
+
+
+/* Eigen CSS reset */
+
+body {
+    margin: 0;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+h2 {
+    margin: 0;
+}
+
+
+/* CSS Articles  */
+
+main > article {
+    position: relative;
+}
+
+
+#media-query {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    color: red;
+    pointer-events: none;
+    font-size: 2em;
+}
+
+@media (min-width: 30em) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 10em;
+    }
+}
+
+@media (max-width: 40em) {
+    main > article {
+        height: 30vh;
+        width: 80vw;
+        margin: 2em;
+        padding: 1.5em;
+    }
+}
+
+
+@media (min-width: 40em) and (max-width: 80em) {
+    main > article {
+        height: 30vmin;
+        width: 30vmin;
+
+        margin: 2em;
+        padding: 1.5em;
+        flex-grow: 1;
+    }
+}
+
+@media (min-width: 80em) {
+    main > article {
+        height: 25vmin;
+        width: 25vmin;
+
+        margin: 2em;
+        padding: 1.5em;
+        flex-grow: 1;
+    }
+}
+
+main > article > a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+main > article {
+    background-position: center;
+    background-size: cover;
+    border-radius: 0.5rem;
+}
+
+main > article .top:hover {
+    animation: bounce 1s;
+}
+
+main > article .top:active {
+    background: url("../assets/icons/Icon-heart_fill_pink.svg") no-repeat;
+}
+
+
+main > article:hover {
+    box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2), 0 0.5em 1.5em 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.02);
+    transition: 0.4s ease-out;
+}
+
+
+main > article:nth-child(1) {
+    background-image: url(../assets/img/procesverbaal.card.png);
+
+
+}
+
+main > article:nth-child(2) {
+    background-image: url(../assets/img/alliteratie.card);
+
+}
+
+main > article:nth-child(3) {
+    background-image: url(../assets/img/julesdeelder.card);
+}
+
+main > article button {
+    position: absolute;
+    padding: 2em;
+    right: 0;
+}
+
+main > article footer {
+    position: absolute;
+    left: 1em;
+    bottom: 1em;
+    pointer-events: none;
+
+    /* cursor uitzetten */
+}
+
+
+main > article button.top {
+    top: 0;
+}
+
+main > article button.bottom {
+    bottom: 0;
+}
+
+main > article button img {
+    width: 2rem;
+}
+
+main > article img:hover {
+    width: 2.5rem;
+    transition: width 250ms ease;
+}
+
+main > article .bottom:hover {
+    transform: translateX(0.0rem) rotate(-10deg);
+    transition: 0.8s;
+}
+
+
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    60%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        -webkit-transform: translateY(-0.25em);
+        transform: translateY(-0.25em);
+    }
+
+    80% {
+        -webkit-transform: translateY(-0.5em);
+        transform: translateY(-0.5em);
+    }
+}
+
+main > article .top:hover {
+    animation: bounce 1s;
+}
+
+
+
+
+main > article h2 {
+    color: #ffffff;
+}
+
+main > article .top {
+    top: 0;
+}
+
+main > article .bottom {
+    bottom: 0;
+}
+
+
+/* CSS class vanuit innerHTML filter.js
+
+.liked{
+    background: url("../assets/icons/Icon-heart_fill_pink.svg") no-repeat;
+}
+
+*/
+
+
+/* CSS Beoordeling pop-up  */
+
+#beoordeling {
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+}
+
+#beoordeling article {
+    position: absolute;
+    top: calc(50vh - 25vmin);
+    left: calc(50vw - 25vmin);
+    background-color: white;
+    width: 50vmin;
+    height: 50vmin;
+    border-radius: .75rem;
+    padding: 3em 2em 2em 2em;
+
+}
+
+#beoordeling article > button {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    text-align: center;
+    height: 3rem;
+    width: 3rem;
+}
+
+#beoordeling article > button:hover {
+    transform: translateX(-0.2rem) rotate(90deg);
+    height: 2.78rem;
+    width: 2.96rem;
+    opacity: 50%;
+    transition-duration: 0.2s;
+}
+
+
+
+#beoordeling h2 {
+    margin-top: 1rem;
+}
+
+#beoordeling footer {
+    position: absolute;
+    bottom: 1rem;
+    padding: 0em 0em 2em 0em;
+}
+
+#beoordeling footer button {
+    background: rgba(0, 0, 0, 0) url("../assets/icons/Icon-rating.svg") no-repeat;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+#beoordeling footer button:hover {
+    background: url("../assets/icons/Icon-rating-selected.svg") no-repeat;
+    transform: translateX(0.0rem) rotate(72deg);
+    transition-duration: 0.2s;
+}
+
+#beoordeling footer button.selected {
+    background: rgba(0, 0, 0, 0) url("../assets/icons/Icon-rating-selected.svg") no-repeat;
+    transition-duration: 0.5s;
+}
+
+
+footer h5 {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #606060;
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 1em;
+}

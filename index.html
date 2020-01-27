@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="../css/reset.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/header.css">
-    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/verhaalzoeken.css">
 
 </head>
 
@@ -33,6 +33,47 @@
             </ul>
 
         </nav>
+        
+        
+        <article>
+            <fieldset>
+                <form>
+                    <h1>
+                        <legend>Zoek jouw persoonlijke reisverhaal</legend>
+                    </h1>
+                    <label for="search">Waar gaat de reis heen?</label>
+                    <input type="search" placeholder="Zoek passend verhaal op plaats, land of werelddeel" id="search" name="search" required>
+                    <h6 class="error-message">We kunnen geen match vinden op de door u ingevulde locatie.</h6>
+                    
+                    <label for="search">Kies een genre</label>
+                    <select name="genres">
+                        <option value="alle">Alle genres - standaard</option>
+                        <option value="horror">Horror</option>
+                        <option value="drama">Drama</option>
+                        <option value="amusement">Amusement</option>
+                        <option value="thrillers">Thrillers</option>
+                    </select>
+
+                    <label for="leestijd" div="leestijd">Leestijd</label>
+                    <input type="range" min="5" max="30" value="10" class="slider" id="time-slider">
+                    <p>Maximaal: <span id="leestijd"></span> minuten</p>
+                    
+                    <h6 class="error-message">Uw wachtwoord is incorrect.</h6>
+
+                    <button onclick="window.location.href = 'pages/overzichtspagina.html';">Zoek verhaal</button>
+                    <h5>Of <a href="pages/overzichtspagina.html" class="bekijk">bekijk alle verhalen ></a></h5>
+
+                </form>
+
+            </fieldset>
+        </article>
+        
+        <section class="toggle-slider">
+        <button value="aanbevolen">Aanbevolen</button>
+        <button value="populair">Populair</button>
+        <span></span>
+        </section>
+        
     </header>
     <main>
 
@@ -74,6 +115,7 @@
 
     </main>
 
+
     <section id="beoordeling" class="hidden">
         <article>
             <h1>Geef een beoordeling.</h1>
@@ -97,5 +139,6 @@
 
     <script src="../script/toggle-slider.js"></script>
     <script src="../script/rating.js"></script>
-    <script src="../script/filter.js"></script>
+    <script src="../script/form.js"></script>
+    <script src="../script/time-slider.js"></script>
 </body></html>
