@@ -317,3 +317,19 @@ header > section > h5 {
     margin-bottom: 2em;
 }
 
+
+select {
+    display: inline-block;
+    box-sizing: border-box;
+    border: .0625rem solid #91a3b7;
+    color: #606060;
+    font-size: 1rem;
+    font-family: "Nexa Regular";
+    height: 2.em;
+    margin-left: 0.2em;
+}
+
+label {
+    margin-left: 5em;
+}
+

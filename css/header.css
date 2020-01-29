@@ -60,7 +60,7 @@ body > header nav img {
 }
 
 @media (min-width: 40em) and (max-width: 80em) {
-    #logo-transavia img:nth-child(1) {
+    #logo-transavia img:nth-child(2) {
         display: initial;
         visibility: visible;
     }
